@@ -38,7 +38,7 @@ plot(pc, col=bwr.colors(nrow(xyz)))
 hc <- hclust(dist(pc$z[,1:2]))
 grps <- cutree(hc, k=2)
 plot(pc, col=grps)
-#Examine the contribution of each residue to pc1
+#Examine the contribution of each residue to pc1 and pc2
 plot.bio3d(pc$au[,1], ylab="PC1 (A)", 
 				xlab="Residue Position",
 				typ="l")
